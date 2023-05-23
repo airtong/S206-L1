@@ -1,5 +1,12 @@
 package aula_inatel.pokemon;
 
-public class pokeRunner {
+import com.intuit.karate.junit5.Karate;
+
+class UsersRunner {
     
+    @Karate.Test
+    Karate testStarWars() {
+        return Karate.run("pokemon").relativeTo(getClass());
+    }    
+
 }
